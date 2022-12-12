@@ -1,7 +1,6 @@
 public class Questions {
 
     private ST<String, Integer> point = new ST<String, Integer>();
-    private int numMajors = 9;
     private int options;
     private int options2;
     private String[] majors;
@@ -20,6 +19,7 @@ public class Questions {
     }
 
     public String[] q2(int choice) {
+        int numMajors = 9;
         String[] maj = new String[numMajors];
         if (choice == 1 && options == 1) {
             maj[0] = "Astrophysical Sciences";
