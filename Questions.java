@@ -3,6 +3,7 @@ public class Questions {
     private ST<String, Integer> point = new ST<String, Integer>();
     private int numMajors = 9;
     private int options;
+    private int options2;
     private String[] majors;
 
     public Questions() {
@@ -30,6 +31,7 @@ public class Questions {
             maj[6] = "Neuroscience";
             maj[7] = "Physics";
             maj[8] = "Mechanical and Aerospace Engineering";
+            options2 = 1;
         }
         if (choice == 1 && options == 2) {
             maj[0] = "Architecture";
@@ -41,6 +43,7 @@ public class Questions {
             maj[6] = "Molecular Biology";
             maj[7] = "School of Public and International Affairs";
             maj[8] = "Psychology";
+            options2 = 2;
         }
         if (choice == 2 && options == 1) {
             maj[0] = "African American Studies";
@@ -52,6 +55,7 @@ public class Questions {
             maj[6] = "History";
             maj[7] = "East Asian Studies";
             maj[8] = "Comparative Literature";
+            options2 = 3;
         }
         if (choice == 2 && options == 2) {
             maj[0] = "Religion";
@@ -63,51 +67,125 @@ public class Questions {
             maj[6] = "French and Italian";
             maj[7] = "Classics";
             maj[8] = "Art and Archaeology";
+            options2 = 4;
         }
         return maj;
     }
 
     public void q3(int choice) {
-        if (choice == 1) {
+        if (choice == 1 && options2 == 1) {
+            point.put(majors[0], 3);
+            point.put(majors[2], 2);
+            point.put(majors[3], 2);
+            point.put(majors[6], 2);
+            point.put(majors[7], 3);
 
         }
-        if (choice == 2) {
-
+        if (choice == 1 && options2 == 2) {
+            point.put(majors[1], 3);
+            point.put(majors[4], 1);
+            point.put(majors[5], 3);
+            point.put(majors[6], 2);
+            point.put(majors[8], 3);
         }
-        if (choice == 3) {
-
+        if (choice == 1 && options2 == 3) {
+            point.put(majors[4], 3);
+            point.put(majors[5], 1);
+            point.put(majors[7], 1);
+            point.put(majors[8], 1);
         }
-        if (choice == 4) {
-
+        if (choice == 1 && options2 == 4) {
+            point.put(majors[0], 3);
+            point.put(majors[7], 2);
+            point.put(majors[8], 1);
         }
+
+
+        if (choice == 2 && options2 == 1) {
+            point.put(majors[1], 2);
+            point.put(majors[4], 3);
+            point.put(majors[5], 1);
+            point.put(majors[8], 3);
+        }
+        if (choice == 2 && options2 == 2) {
+            point.put(majors[0], 3);
+            point.put(majors[2], 3);
+            point.put(majors[3], 2);
+            point.put(majors[7], 2);
+        }
+        if (choice == 2 && options2 == 3) {
+            point.put(majors[0], 2);
+            point.put(majors[1], 3);
+            point.put(majors[2], 3);
+            point.put(majors[3], 2);
+            point.put(majors[6], 2);
+        }
+        if (choice == 2 && options2 == 4) {
+            point.put(majors[1], 1);
+            point.put(majors[2], 3);
+            point.put(majors[3], 2);
+            point.put(majors[4], 1);
+            point.put(majors[5], 2);
+            point.put(majors[6], 2);
+        }
+
+
     }
 
     public void q4(int choice) {
-        if (choice == 1) {
+        if (choice == 1 && options2 == 1) {
 
         }
-        if (choice == 2) {
+        if (choice == 1 && options2 == 2) {
 
         }
-        if (choice == 3) {
+        if (choice == 1 && options2 == 3) {
 
         }
-        if (choice == 4) {
+        if (choice == 1 && options2 == 4) {
+
+        }
+
+
+        if (choice == 2 && options2 == 1) {
+
+        }
+        if (choice == 2 && options2 == 2) {
+
+        }
+        if (choice == 2 && options2 == 3) {
+
+        }
+        if (choice == 2 && options2 == 4) {
 
         }
     }
 
     public void q5(int choice) {
-        if (choice == 1) {
+        if (choice == 1 && options2 == 1) {
 
         }
-        if (choice == 2) {
+        if (choice == 1 && options2 == 2) {
 
         }
-        if (choice == 3) {
+        if (choice == 1 && options2 == 3) {
 
         }
-        if (choice == 4) {
+        if (choice == 1 && options2 == 4) {
+
+        }
+
+
+        if (choice == 2 && options2 == 1) {
+
+        }
+        if (choice == 2 && options2 == 2) {
+
+        }
+        if (choice == 2 && options2 == 3) {
+
+        }
+        if (choice == 2 && options2 == 4) {
 
         }
     }
