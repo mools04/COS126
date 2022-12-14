@@ -13,6 +13,10 @@ import java.awt.event.ActionListener;
 
 public class Quiz extends JFrame implements ActionListener {
 
+    public static int height1;
+    public static int height2;
+    public static int height3;
+
     private JRadioButton button1;
     private JRadioButton button2;
     private JLabel title;
@@ -40,6 +44,7 @@ public class Quiz extends JFrame implements ActionListener {
 
     // makes the quiz frame
     public Quiz() {
+
         title = new JLabel();
         title.setText("Welcome to MajrFindr - Your Virtual Academic Advisor!");
         title.setHorizontalAlignment(JLabel.CENTER);
@@ -150,6 +155,11 @@ public class Quiz extends JFrame implements ActionListener {
             }
             else if (count == 5) {
                 // show recs
+                height1 = 200;
+                height2 = 300;
+                height3 = 150;
+                ShowRecs recs = new ShowRecs();
+                this.add(recs);
                 StdOut.println("non-profit");
             }
             count++;
@@ -182,6 +192,11 @@ public class Quiz extends JFrame implements ActionListener {
             }
             else if (count == 5) {
                 // show recs
+                height1 = 300;
+                height2 = 400;
+                height3 = 250;
+                ShowRecs recs = new ShowRecs();
+                this.add(recs);
                 StdOut.println("goldman sachs");
             }
             count++;
